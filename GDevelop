@@ -50,6 +50,23 @@
   </li>
 </ul>
 
+<p>
+  Suatu kejadian tanpa syarat akan selalu menjalankan tindakan.<br>
+  Jika suatu kondisi di tambahkan ke suatu kejadian, tindakan hanya akan dilakukan ketika kondisi tersebut benar.
+</p>
+
+<h3>Bagaimana objek dipilih</h3>
+<p>Jika suatu kejadian tidak memiliki syarat, tindakan akan berlaku untuk semua objek yang tercantum dalam tindakan tersebut.</p>
+<p>
+  Setelah suatu kondisi di tambahkan yang menyebutkan sebuah objek, 
+  semua tindakan selanjutnya hanya akan memengaruhi objek yang sesuai dengan kondisi sebelumnya.
+</p>
+<p>
+  Tip<br>
+  Daftar objek yang memenuhi syarat juga digunakan oleh semua sub-kejadian.
+</p>
+
+
  
 </body>
 </html>
