@@ -66,6 +66,35 @@
   Daftar objek yang memenuhi syarat juga digunakan oleh semua sub-kejadian.
 </p>
 
+<h3>Urutan kejadian</h3>
+<p>
+  Urutan kejadian sangat penting!<br>
+  Peristiwa diproses dari atas ke bawah, jadi peristiwa di bagian atas akan dieksekusi terlebih dahulu.
+</p>
+<p>
+  Tip<br>
+  Peristiwa diproses sekitar 60 kali per detik.<br>
+  Setiap iterasi melalui peristiwa disebut Frame, tick, atau game loop.
+</p>
+
+<h2>Perilaku:Logika permainan untuk objek</h2>
+<p>
+  Perilaku (behavior) meningkatkan kemampuan suatu objek dengan logika yang telah di tentukan sebelumnya.<br>
+  Perilaku dapat digunakan untuk mengotomatiskan tugas-tugas sederhana, 
+  tetapi juga memiliki kemampuan untuk melakukan tugas-tugas yang jauh lebih canggih.
+</p>
+<p>
+  Behavior sering kali memiliki variabel tersendiri yang dapat di ubah untuk menyesuaikan tugas yang dilakukannya,
+  tetapi variabel tersebut juga dapat dimanipulasi menggunakan peristiwa yang spesifik untuk perilaku tersebut.
+</p>
+<p>
+  Tip<br>
+  Anda dapat membuat perilaku khusus untuk objek anda.<br>
+  Kami merekomendasikan ini seiring perkembangan game anda.<br>
+  Ini memungkinkan anda untuk memasukkan logika tentang apa yang dilakukan objek anda kedalam perilaku khusus, 
+  daripada membebani lembar peristiwa adegan.
+</p>
+
 
  
 </body>
