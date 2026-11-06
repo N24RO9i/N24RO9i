@@ -95,6 +95,51 @@
   daripada membebani lembar peristiwa adegan.
 </p>
 
+<h2>Memindahkan objek dengan gaya</h2>
+<p>
+  Menggerakkan benda dapat dilakukan dengan menggunakan gaya.<br>
+  Gaya digunakan untuk "mendorong" benda.
+</p>
+<p>Anda dapet menentukan:</p>
+<ul>
+  <li>Kecepatan pergerakan pada sumbu X (horizontal) dan Y (vertikal), dalam piksel per detik.</li>
+  <li>Sudut yang ingin di tuju dan kecepatannya, dalam piksel per detik.</li>
+  <li>Gaya sesaat hanya akan menggerakkan objek selama satu frame.</li>
+  <li>Gaya permanen akan menggerakkan objek setiap frame hingga berhenti.</li>
+</ul>
+
+<h3>Cara lain untuk memindahkan benda</h3>
+<p>
+  Beberapa "perilaku" seperti mesin fisika atau pencarian jalur, dapat menggerakkan objek dengan sendirinya.<br>
+  Dalam hal ini, lebih baik tidak menggunakan sistem gaya bawaan 
+  dan sebagai gantinya hanya mengandalkan tindakan yang disediakan oleh perilaku tersebut.
+</p>
+
+<h2>Variabel:Menyimpan informasi</h2>
+<p>variabel digunakan untuk menyimpan data dalam format format angka atau teks.<br>
+  Data ini dapat mewakili hampir semua hal dalam game anda.<br>
+  Variabel berguna karena memungkinkan anda untuk menetapkan nilai di suatu tempat 
+  dan kemudian membaca nilai tersebut di beberapa tempat dalam game anda.
+</p>
+<p>
+  Tip<br>
+  Kondisi digunakan untuk memeriksa nilai suatu variabel.<br>
+  aksi digunakan untuk mengubah nilai suatu variabel.
+</p>
+
+<h3>Dimana variabel disimpan?(cakupan variabel)</h3>
+<p>
+  Cakupan (scope) suatu variabel menentukan tempat variabel tersebut dapat diakses.<br>
+  Di GDevelop, tersedia tiga cakupan variabel:
+</p>
+<ul>
+<li>Variabel Global dapat diakses dari semua adegan permainan.</li>
+<li>
+  Variabel Adegan hanya dapat diakses dari adegan tempat variabel tersebut dibuat.<br>
+  Variabel ini dapat digunakan untuk data yang hanya berkaitan dengan satu adegan.
+</li>
+<li>Variabel objek hanya berkaitan dengan satu objek.</li>
+</ul>
 
  
 </body>
