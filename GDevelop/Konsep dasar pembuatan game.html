@@ -1,168 +1,170 @@
 <!doctype html>
 <html>
-<head><title>GDevelop</title></head>
-<body>
-<h1>Konsep dasar pembuatan game</h1>
+  <head><title>GDevelop</title></head>
+  <body>
+    <h1>Konsep dasar pembuatan game</h1>
 
-<h2>Apa yang perlu di ketahui untuk memulai dengan GDevelop</h2>
+    <h2>Apa yang perlu di ketahui untuk memulai dengan GDevelop</h2>
+      <p>Konsep dasar GDevelop sangat sederhana.</p>
+    <hr>
 
-<p>Konsep dasar GDevelop sangat sederhana.</p>
-<hr>
+    <h2>Menampilkan berbagai hal di layar:objek</h2>
+      <p>
+        Segala sesuatu yang di tampilkan di layar di sebut "objek".<br>
+        Berbagai jenis objek dapat digunakan untuk menampilkan berbagai elemen permainan di layar.
+      </p>
+    <hr>
 
-<h2>Menampilkan berbagai hal di layar:objek</h2>
-<p>
-  Segala sesuatu yang di tampilkan di layar di sebut "objek".<br>
-  Berbagai jenis objek dapat digunakan untuk menampilkan berbagai elemen permainan di layar.
-</p>
-<hr>
+    <h2>Penentuan posisi objek di dunia:koordinat</h2>
+      <p>
+        Objek pada layar/scene GDevelop memiliki koordinat X dan Y.<br>
+        Koordinat ini sesuai dengan posisi horizontal (sumbu X) dan posisi vertikal (sumbu Y) pada bidang kartesius.
+      </p>
 
-<h2>Penentuan posisi objek di dunia:koordinat</h2>
-<p>
-  Objek pada layar/scene GDevelop memiliki koordinat X dan Y.<br>
-  Koordinat ini sesuai dengan posisi horizontal (sumbu X) dan posisi vertikal (sumbu Y) pada bidang kartesius.
-</p>
+      <p>
+        Koordinat X berkurang saat anda bergerak ke kiri dan bertambah saat anda bergerak ke kanan.<br>
+        Koordinat Y bertambah saat anda bergerak ke bawah dan berkurang saat anda bergerak ke atas.
+      </p>
 
-<p>
-  Koordinat X berkurang saat anda bergerak ke kiri dan bertambah saat anda bergerak ke kanan.<br>
-  Koordinat Y bertambah saat anda bergerak ke bawah dan berkurang saat anda bergerak ke atas.
-</p>
+      <p>
+        Tip<br>
+        Pojok kiri atas layar game anda di mulai pada X=0 dan Y=0, tetapi ini akan berubah jika kamera di gerakkan.
+      </p>
+    <hr>
 
-<p>
-  Tip<br>
-  Pojok kiri atas layar game anda di mulai pada X=0 dan Y=0, tetapi ini akan berubah jika kamera di gerakkan.
-</p>
-<hr>
+    <h2>Sudut</h2>
+      <p>Untuk memindahkan atau memutar objek, anda perlu menentukan sudut yang diinginkan dalam derajat.</p>
+    <hr>
 
-<h2>Sudut</h2>
-<p>Untuk memindahkan atau memutar objek, anda perlu menentukan sudut yang diinginkan dalam derajat.</p>
-<hr>
+    <h2>Acara</h2>
+      <p>
+        Peristiwa digunakan untuk menciptakan logika permainan anda.<br>
+        Peristiwa terdiri dari kondisi dan tindakan.<br>
+        Kondisi dapat dianggap sebagai pernyataan "jika" dan tindakan dapat dianggap sebagai pernyataan "maka".<br>
+        "jika" kondisinya benar/terpenuhi, "maka" tindakan akan terjadi.<br>
+        Sebagian besar kondisi dan tindakan mengacu pada objek:
+      </p>
+      <ul>
+        <li>Kondisi menjalankan pengujian pada objek.</li>
+        <li>
+          Tindakan memengaruhi objek yang memenuhi syarat.<br>
+          Tindakan dapat mengubah posisi, tampilan, dan lain sebagainya pada objek tersebut.
+        </li>
+      </ul>
 
-<h2>Acara</h2>
-<p>Peristiwa digunakan untuk menciptakan logika permainan anda.<br>
-  Peristiwa terdiri dari kondisi dan tindakan.<br>
-  Kondisi dapat dianggap sebagai pernyataan "jika" dan tindakan dapat dianggap sebagai pernyataan "maka".<br>
-  "jika" kondisinya benar/terpenuhi, "maka" tindakan akan terjadi.<br>
-  Sebagian besar kondisi dan tindakan mengacu pada objek:
-</p>
-<ul>
-  <li>Kondisi menjalankan pengujian pada objek.</li>
-  <li>
-      Tindakan memengaruhi objek yang memenuhi syarat.<br>
-      Tindakan dapat mengubah posisi, tampilan, dan lain sebagainya pada objek tersebut.
-  </li>
-</ul>
+      <p>
+        Suatu kejadian tanpa syarat akan selalu menjalankan tindakan.<br>
+        Jika suatu kondisi di tambahkan ke suatu kejadian, tindakan hanya akan dilakukan ketika kondisi tersebut benar.
+      </p>
 
-<p>
-  Suatu kejadian tanpa syarat akan selalu menjalankan tindakan.<br>
-  Jika suatu kondisi di tambahkan ke suatu kejadian, tindakan hanya akan dilakukan ketika kondisi tersebut benar.
-</p>
+    <h3>Bagaimana objek dipilih</h3>
+      <p>Jika suatu kejadian tidak memiliki syarat, tindakan akan berlaku untuk semua objek yang tercantum dalam tindakan tersebut.</p>
+      <p>
+        Setelah suatu kondisi di tambahkan yang menyebutkan sebuah objek, 
+        semua tindakan selanjutnya hanya akan memengaruhi objek yang sesuai dengan kondisi sebelumnya.
+      </p>
+      <p>
+        Tip<br>
+        Daftar objek yang memenuhi syarat juga digunakan oleh semua sub-kejadian.
+      </p>
 
-<h3>Bagaimana objek dipilih</h3>
-<p>Jika suatu kejadian tidak memiliki syarat, tindakan akan berlaku untuk semua objek yang tercantum dalam tindakan tersebut.</p>
-<p>
-  Setelah suatu kondisi di tambahkan yang menyebutkan sebuah objek, 
-  semua tindakan selanjutnya hanya akan memengaruhi objek yang sesuai dengan kondisi sebelumnya.
-</p>
-<p>
-  Tip<br>
-  Daftar objek yang memenuhi syarat juga digunakan oleh semua sub-kejadian.
-</p>
+    <h3>Urutan kejadian</h3>
+      <p>
+        Urutan kejadian sangat penting!<br>
+        Peristiwa diproses dari atas ke bawah, jadi peristiwa di bagian atas akan dieksekusi terlebih dahulu.
+      </p>
+      <p>
+        Tip<br>
+        Peristiwa diproses sekitar 60 kali per detik.<br>
+        Setiap iterasi melalui peristiwa disebut Frame, tick, atau game loop.
+      </p>
+    <hr>
 
-<h3>Urutan kejadian</h3>
-<p>
-  Urutan kejadian sangat penting!<br>
-  Peristiwa diproses dari atas ke bawah, jadi peristiwa di bagian atas akan dieksekusi terlebih dahulu.
-</p>
-<p>
-  Tip<br>
-  Peristiwa diproses sekitar 60 kali per detik.<br>
-  Setiap iterasi melalui peristiwa disebut Frame, tick, atau game loop.
-</p>
-<hr>
+    <h2>Perilaku:Logika permainan untuk objek</h2>
+      <p>
+        Perilaku (behavior) meningkatkan kemampuan suatu objek dengan logika yang telah di tentukan sebelumnya.<br>
+        Perilaku dapat digunakan untuk mengotomatiskan tugas-tugas sederhana, 
+        tetapi juga memiliki kemampuan untuk melakukan tugas-tugas yang jauh lebih canggih.
+      </p>
+      <p>
+        Behavior sering kali memiliki variabel tersendiri yang dapat di ubah untuk menyesuaikan tugas yang dilakukannya,
+        tetapi variabel tersebut juga dapat dimanipulasi menggunakan peristiwa yang spesifik untuk perilaku tersebut.
+      </p>
+      <p>
+        Tip<br>
+        Anda dapat membuat perilaku khusus untuk objek anda.<br>
+        Kami merekomendasikan ini seiring perkembangan game anda.<br>
+        Ini memungkinkan anda untuk memasukkan logika tentang apa yang dilakukan objek anda kedalam perilaku khusus, 
+        daripada membebani lembar peristiwa adegan.
+      </p>
+    <hr>
 
-<h2>Perilaku:Logika permainan untuk objek</h2>
-<p>
-  Perilaku (behavior) meningkatkan kemampuan suatu objek dengan logika yang telah di tentukan sebelumnya.<br>
-  Perilaku dapat digunakan untuk mengotomatiskan tugas-tugas sederhana, 
-  tetapi juga memiliki kemampuan untuk melakukan tugas-tugas yang jauh lebih canggih.
-</p>
-<p>
-  Behavior sering kali memiliki variabel tersendiri yang dapat di ubah untuk menyesuaikan tugas yang dilakukannya,
-  tetapi variabel tersebut juga dapat dimanipulasi menggunakan peristiwa yang spesifik untuk perilaku tersebut.
-</p>
-<p>
-  Tip<br>
-  Anda dapat membuat perilaku khusus untuk objek anda.<br>
-  Kami merekomendasikan ini seiring perkembangan game anda.<br>
-  Ini memungkinkan anda untuk memasukkan logika tentang apa yang dilakukan objek anda kedalam perilaku khusus, 
-  daripada membebani lembar peristiwa adegan.
-</p>
-<hr>
+    <h2>Memindahkan objek dengan gaya</h2>
+      <p>
+        Menggerakkan benda dapat dilakukan dengan menggunakan gaya.<br>
+        Gaya digunakan untuk "mendorong" benda.
+      </p>
+      <p>Anda dapet menentukan:</p>
+      <ul>
+        <li>Kecepatan pergerakan pada sumbu X (horizontal) dan Y (vertikal), dalam piksel per detik.</li>
+        <li>Sudut yang ingin di tuju dan kecepatannya, dalam piksel per detik.</li>
+        <li>Gaya sesaat hanya akan menggerakkan objek selama satu frame.</li>
+        <li>Gaya permanen akan menggerakkan objek setiap frame hingga berhenti.</li>
+      </ul>
 
-<h2>Memindahkan objek dengan gaya</h2>
-<p>
-  Menggerakkan benda dapat dilakukan dengan menggunakan gaya.<br>
-  Gaya digunakan untuk "mendorong" benda.
-</p>
-<p>Anda dapet menentukan:</p>
-<ul>
-  <li>Kecepatan pergerakan pada sumbu X (horizontal) dan Y (vertikal), dalam piksel per detik.</li>
-  <li>Sudut yang ingin di tuju dan kecepatannya, dalam piksel per detik.</li>
-  <li>Gaya sesaat hanya akan menggerakkan objek selama satu frame.</li>
-  <li>Gaya permanen akan menggerakkan objek setiap frame hingga berhenti.</li>
-</ul>
+    <h3>Cara lain untuk memindahkan benda</h3>
+      <p>
+        Beberapa "perilaku" seperti mesin fisika atau pencarian jalur, dapat menggerakkan objek dengan sendirinya.<br>
+        Dalam hal ini, lebih baik tidak menggunakan sistem gaya bawaan 
+        dan sebagai gantinya hanya mengandalkan tindakan yang disediakan oleh perilaku tersebut.
+      </p>
+    <hr>
 
-<h3>Cara lain untuk memindahkan benda</h3>
-<p>
-  Beberapa "perilaku" seperti mesin fisika atau pencarian jalur, dapat menggerakkan objek dengan sendirinya.<br>
-  Dalam hal ini, lebih baik tidak menggunakan sistem gaya bawaan 
-  dan sebagai gantinya hanya mengandalkan tindakan yang disediakan oleh perilaku tersebut.
-</p>
-<hr>
+    <h2>Variabel:Menyimpan informasi</h2>
+      <p>
+        variabel digunakan untuk menyimpan data dalam format format angka atau teks.<br>
+        Data ini dapat mewakili hampir semua hal dalam game anda.<br>
+        Variabel berguna karena memungkinkan anda untuk menetapkan nilai di suatu tempat 
+        dan kemudian membaca nilai tersebut di beberapa tempat dalam game anda.
+      </p>
+      <p>
+        Tip<br>
+        Kondisi digunakan untuk memeriksa nilai suatu variabel.<br>
+        aksi digunakan untuk mengubah nilai suatu variabel.
+      </p>
 
-<h2>Variabel:Menyimpan informasi</h2>
-<p>variabel digunakan untuk menyimpan data dalam format format angka atau teks.<br>
-  Data ini dapat mewakili hampir semua hal dalam game anda.<br>
-  Variabel berguna karena memungkinkan anda untuk menetapkan nilai di suatu tempat 
-  dan kemudian membaca nilai tersebut di beberapa tempat dalam game anda.
-</p>
-<p>
-  Tip<br>
-  Kondisi digunakan untuk memeriksa nilai suatu variabel.<br>
-  aksi digunakan untuk mengubah nilai suatu variabel.
-</p>
+    <h3>Dimana variabel disimpan?(cakupan variabel)</h3>
+      <p>
+        Cakupan (scope) suatu variabel menentukan tempat variabel tersebut dapat diakses.<br>
+        Di GDevelop, tersedia tiga cakupan variabel:
+      </p>
+      <ul>
+        <li>Variabel Global dapat diakses dari semua adegan permainan.</li>
+        <li>
+          Variabel Adegan hanya dapat diakses dari adegan tempat variabel tersebut dibuat.<br>
+          Variabel ini dapat digunakan untuk data yang hanya berkaitan dengan satu adegan.
+        </li>
+        <li>Variabel objek hanya berkaitan dengan satu objek.</li>
+      </ul>
+    <hr>
 
-<h3>Dimana variabel disimpan?(cakupan variabel)</h3>
-<p>
-  Cakupan (scope) suatu variabel menentukan tempat variabel tersebut dapat diakses.<br>
-  Di GDevelop, tersedia tiga cakupan variabel:
-</p>
-<ul>
-<li>Variabel Global dapat diakses dari semua adegan permainan.</li>
-<li>
-  Variabel Adegan hanya dapat diakses dari adegan tempat variabel tersebut dibuat.<br>
-  Variabel ini dapat digunakan untuk data yang hanya berkaitan dengan satu adegan.
-</li>
-<li>Variabel objek hanya berkaitan dengan satu objek.</li>
-</ul>
-<hr>
+    <h2>TimeDelta: "waktu yang telah berlalu" sejak frame sebelumnya</h2>
+      <p>
+        GDevelop memproses peristiwa dan menggambar ulang layar (disebut "Frame") sekitar 60 kali perdetik.<br>
+        Jumlah Frame per detik yang tepat bergantung pada sumber daya komputer dan tuntutan permainan.<br>
+        Komputer yang lambat mungkin hanya merender 25 frame per detik, sementara komputer yang cepat dapat merender 60 frame per detik.<br>
+        Agar permainan terasa sama di setiap perangkat, penting untuk memperhitungkan waktu yang berlalu pada frame.
+      </p>
+      <p>Hal ini dapat di capai dengan menggunakan //TimeDelta()//, yang mengembalikan waktu dalam detik sejak frame terakhir.</p>
+      <p>Aturan praktis: Gunakan TimeDelta() ketika anda ingin terus menerapkan perubahan pada suatu nilai.</p>
+      <p>Jika tindakan anda hanya berjalan sekali anda tidak perlu menggunakan TimeDelta().</p>
+      <p>
+        Bahaya<br>
+        Anda tidak perlu menggunakan TimeDelta() jika aksi tersebut mengharapkan nilai dalam "satuan per detik".<br>
+        Dalam kasus ini, GDevelop secara otomatis memperhitungkan perbedaan kecepatan bingkai(frame rate).
+      </p>
+    <hr>
 
-<h2>TimeDelta: "waktu yang telah berlalu" sejak frame sebelumnya</h2>
-<p>GDevelop memproses peristiwa dan menggambar ulang layar (disebut "Frame") sekitar 60 kali perdetik.<br>
-  Jumlah Frame per detik yang tepat bergantung pada sumber daya komputer dan tuntutan permainan.<br>
-  Komputer yang lambat mungkin hanya merender 25 frame per detik, sementara komputer yang cepat dapat merender 60 frame per detik.<br>
-  Agar permainan terasa sama di setiap perangkat, penting untuk memperhitungkan waktu yang berlalu pada frame.
-</p>
-<p>Hal ini dapat di capai dengan menggunakan //TimeDelta()//, yang mengembalikan waktu dalam detik sejak frame terakhir.</p>
-<p>Aturan praktis: Gunakan TimeDelta() ketika anda ingin terus menerapkan perubahan pada suatu nilai.</p>
-<p>Jika tindakan anda hanya berjalan sekali anda tidak perlu menggunakan TimeDelta().</p>
-<p>
-  Bahaya<br>
-  Anda tidak perlu menggunakan TimeDelta() jika aksi tersebut mengharapkan nilai dalam "satuan per detik".<br>
-  Dalam kasus ini, GDevelop secara otomatis memperhitungkan perbedaan kecepatan bingkai(frame rate).
-</p>
-<hr>
 
- 
-</body>
+  </body>
 </html>
