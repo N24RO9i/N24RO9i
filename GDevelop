@@ -9,12 +9,14 @@
 </h2>
 
 <p>Konsep dasar GDevelop sangat sederhana.</p>
+<hr>
 
 <h2>Menampilkan berbagai hal di layar:objek</h2>
 <p>
   Segala sesuatu yang di tampilkan di layar di sebut "objek".<br>
   Berbagai jenis objek dapat digunakan untuk menampilkan berbagai elemen permainan di layar.
 </p>
+<hr>
 
 <h2>Penentuan posisi objek di dunia:koordinat</h2>
 <p>
@@ -31,9 +33,11 @@
   Tip<br>
   Pojok kiri atas layar game anda di mulai pada X=0 dan Y=0, tetapi ini akan berubah jika kamera di gerakkan.
 </p>
+<hr>
 
 <h2>Sudut</h2>
 <p>Untuk memindahkan atau memutar objek, anda perlu menentukan sudut yang diinginkan dalam derajat.</p>
+<hr>
 
 <h2>Acara</h2>
 <p>Peristiwa digunakan untuk menciptakan logika permainan anda.<br>
@@ -76,6 +80,7 @@
   Peristiwa diproses sekitar 60 kali per detik.<br>
   Setiap iterasi melalui peristiwa disebut Frame, tick, atau game loop.
 </p>
+<hr>
 
 <h2>Perilaku:Logika permainan untuk objek</h2>
 <p>
@@ -94,6 +99,7 @@
   Ini memungkinkan anda untuk memasukkan logika tentang apa yang dilakukan objek anda kedalam perilaku khusus, 
   daripada membebani lembar peristiwa adegan.
 </p>
+<hr>
 
 <h2>Memindahkan objek dengan gaya</h2>
 <p>
@@ -114,6 +120,7 @@
   Dalam hal ini, lebih baik tidak menggunakan sistem gaya bawaan 
   dan sebagai gantinya hanya mengandalkan tindakan yang disediakan oleh perilaku tersebut.
 </p>
+<hr>
 
 <h2>Variabel:Menyimpan informasi</h2>
 <p>variabel digunakan untuk menyimpan data dalam format format angka atau teks.<br>
@@ -140,6 +147,23 @@
 </li>
 <li>Variabel objek hanya berkaitan dengan satu objek.</li>
 </ul>
+<hr>
+
+<h2>TimeDelta: "waktu yang telah berlalu" sejak frame sebelumnya</h2>
+<p>GDevelop memproses peristiwa dan menggambar ulang layar (disebut "Frame") sekitar 60 kali perdetik.<br>
+  Jumlah Frame per detik yang tepat bergantung pada sumber daya komputer dan tuntutan permainan.<br>
+  Komputer yang lambat mungkin hanya merender 25 frame per detik, sementara komputer yang cepat dapat merender 60 frame per detik.<br>
+  Agar permainan terasa sama di setiap perangkat, penting untuk memperhitungkan waktu yang berlalu pada frame.
+</p>
+<p>Hal ini dapat di capai dengan menggunakan //TimeDelta()//, yang mengembalikan waktu dalam detik sejak frame terakhir.</p>
+<p>Aturan praktis: Gunakan TimeDelta() ketika anda ingin terus menerapkan perubahan pada suatu nilai.</p>
+<p>Jika tindakan anda hanya berjalan sekali anda tidak perlu menggunakan TimeDelta().</p>
+<p>
+  Bahaya<br>
+  Anda tidak perlu menggunakan TimeDelta() jika aksi tersebut mengharapkan nilai dalam "satuan per detik".<br>
+  Dalam kasus ini, GDevelop secara otomatis memperhitungkan perbedaan kecepatan bingkai(frame rate).
+</p>
+<hr>
 
  
 </body>
